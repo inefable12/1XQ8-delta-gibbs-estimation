@@ -28,6 +28,9 @@ robust_scaler = joblib.load('./archivos/robust_scaler.pickle')
 minmax_scaler = joblib.load('./archivos/minmax_scaler.pickle')
 #selector_lgbm = joblib.load('./archivos/selector_LGBM.pickle')
 #lgbm_model = joblib.load('./archivos/lgbm_best_model.pickle')
+selector_lgbm = joblib.load('./archivos/selector_LGBM..joblib')
+lgbm_model = joblib.load('./archivos/lgbm_best_model.joblib')
+
 
 # RDKit selected descriptors function
 def get_selected_RDKitdescriptors(smile, selected_descriptors, missingVal=None):
