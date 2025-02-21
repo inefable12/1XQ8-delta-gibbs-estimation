@@ -10,8 +10,8 @@ from padelpy import from_smiles
 # from PaDEL_pywrapper import PaDEL
 # from PaDEL_pywrapper import descriptors
 import numpy as np
-import joblib
 import pickle
+import joblib
 
 st.title("Test de ML para ligando-receptor")
 
