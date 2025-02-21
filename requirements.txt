@@ -6,4 +6,3 @@ scikit-learn
 joblib
 padelpy==0.1.16
 padel-pywrapper==1.0.0
-pickle
