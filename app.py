@@ -7,8 +7,8 @@ from rdkit.Chem import Draw
 from rdkit.Chem import AllChem
 from rdkit.Chem import Descriptors
 from padelpy import from_smiles
-#from PaDEL_pywrapper import PaDEL
-#from PaDEL_pywrapper import descriptors
+from PaDEL_pywrapper import PaDEL
+from PaDEL_pywrapper import descriptors
 import numpy as np
 import joblib
 
@@ -25,8 +25,8 @@ RDKit_select_descriptors = joblib.load('./archivos/RDKit_select_descriptors.pick
 PaDEL_select_descriptors = joblib.load('./archivos/PaDEL_select_descriptors.pickle')
 robust_scaler = joblib.load('./archivos/robust_scaler.pickle')
 minmax_scaler = joblib.load('./archivos/minmax_scaler.pickle')
-selector_lgbm = joblib.load('./archivos/selector_LGBM.pickle')
-#lgbm_model = joblib.load('./archivos/lgbm_best_model.pickle')
+# selector_lgbm = joblib.load('./archivos/selector_LGBM.pickle')
+# lgbm_model = joblib.load('./archivos/lgbm_best_model.pickle')
 
 # RDKit selected descriptors function
 def get_selected_RDKitdescriptors(smile, selected_descriptors, missingVal=None):
